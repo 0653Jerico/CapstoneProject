@@ -13,21 +13,70 @@
   </head>
   
   <body>
-    <div class="sidebar">
-      <div>
-        <div class="profile">
-          <img src="profile.jpg" alt="Profile Picture" />
-          <h3>John Doe</h3>
-        </div>
-        <a href="#dashboard" class="nav-link">Dashboard</a>
-        <a href="#add-patient" class="nav-link">Add Patient</a>
-        <a href="#manage-records" class="nav-link">Manage Records</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="btn btn-outline-secondary" id="sidebarToggle">Menu</button>
+      <a class="navbar-brand ml-2" href="#">DIGIREC</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Notifications</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Profile
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileDropdown">
+                      <a class="dropdown-item" href="#">Settings</a>
+                      <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+              </li>
+          </ul>
       </div>
-      <div class="contact-info">
-        <p>Contact Developer:</p>
-        <p>Email: developer@example.com</p>
-        <p>Phone: +1234567890</p>
+  </nav>
+
+  <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+          <div>
+              <div class="profile">
+                  <h5>Secretary Profile</h5>
+              </div>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Add Patient</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Manage Records</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Developer</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </div>
+
+      <!-- Main Content -->
+      <div class="content">
+          <h1>Welcome to the Secretary Dashboard</h1>
+          <p>Here you can manage patients and records efficiently.</p>
+          <!-- Long content for scrolling -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate deserunt eum, minima minus incidunt earum alias, beatae aspernatur iste reiciendis expedita id atque fuga autem eligendi rem doloribus. Ipsam, totam ut id dolore fuga, beatae voluptas a tenetur voluptatem fugit earum magnam aliquid ducimus corporis doloremque delectus esse odio alias perferendis in minus. Voluptatibus, et! Nam dolorum ab repellendus natus est corrupti qui earum consectetur provident excepturi, vitae illum voluptates hic! Eos hic itaque animi, tempore, eaque rem in pariatur vitae porro molestiae ipsum perspiciatis ex incidunt. Quae, quaerat tenetur placeat deserunt quasi, non minima amet deleniti temporibus laboriosam, omnis sapiente hic! Dicta est, illo, quam quos aperiam autem eius ex quod totam in magni esse reiciendis. Enim vitae nostrum vel nisi dolore, quisquam natus ullam alias iure nemo, earum, tenetur maxime minima. Adipisci, eius aliquid nemo facere unde ea. Totam fugiat, obcaecati mollitia illum eveniet quo officiis vitae ducimus dolorem earum est, dolorum vero natus modi. Voluptatem voluptates assumenda officia inventore placeat hic asperiores? Ratione, libero molestiae corrupti quam maxime laudantium vero, dolor voluptates iure unde illum cumque natus, minus quas voluptatum quibusdam necessitatibus veritatis itaque? Velit et veritatis, eum ad tempore minus sed eius reiciendis aspernatur laborum possimus quasi perspiciatis eveniet dolore facilis ipsam dicta quae omnis. Magnam iure illum placeat rem autem veniam sunt ipsam quia impedit sed dolor fuga, beatae nesciunt minima iusto quo officia repudiandae cupiditate architecto modi delectus est accusantium nemo. Deserunt eveniet porro praesentium velit perspiciatis reiciendis ex tempora inventore optio veniam sequi exercitationem, saepe, nemo enim adipisci quam, ea commodi reprehenderit quibusdam dignissimos suscipit. Assumenda, voluptate velit cupiditate et odio non nostrum fuga amet iure dolorem ducimus ex, delectus deserunt aspernatur iusto iste atque quam voluptates necessitatibus quo totam distinctio omnis provident excepturi. Earum ipsam aspernatur, at quis, eaque aperiam amet incidunt asperiores aut ad error expedita iusto culpa libero harum architecto fugiat sapiente modi voluptatum possimus illo obcaecati blanditiis dolore. Sunt illum facilis debitis porro voluptatem fugit dolore alias totam possimus, praesentium soluta quae consectetur nostrum harum, quidem eaque esse! Laudantium ratione dicta expedita temporibus doloremque voluptas repellat sequi porro facilis! Fugiat, quae, totam aperiam voluptatum minus officiis necessitatibus aut exercitationem optio reiciendis perferendis vero similique et. Voluptates laudantium vel voluptas iste hic excepturi id modi impedit adipisci possimus consequatur quisquam, cupiditate quis at recusandae assumenda nemo dolores officiis nulla, ipsam, est reiciendis fugit quas magni. Voluptatem molestias sequi eos, sapiente nulla reiciendis tenetur architecto atque impedit praesentium nemo et laborum ipsa odio consequuntur possimus minus ullam accusantium dolores porro perferendis fuga magnam recusandae. Veritatis id at deserunt cumque autem sequi ipsum, quam atque itaque placeat hic? Amet quibusdam asperiores voluptas in commodi quisquam ipsa doloribus, rerum itaque quod pariatur? Non, assumenda corporis animi quasi aut nobis, consequatur magni impedit rerum provident quo voluptatibus quisquam iusto, fuga tenetur. Enim, optio cum. Expedita, nam omnis alias in dolores rerum, eligendi et magni eaque labore modi deserunt fugit sed amet officia veritatis dolore ex nesciunt eveniet necessitatibus. Velit quia tempore soluta aperiam.</p>
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
   </body>
 </html>

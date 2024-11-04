@@ -2,49 +2,79 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-$primary: #0dcaf0;
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #e0e7ff; /* Very light blue background */
+  color: #333; /* Darker text color for contrast */
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  flex: 1;
+  margin-top: 56px; /* Adjust for fixed navbar height */
+}
+.navbar {
+  background-color: #b3c7f9; /* Light blue for navbar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar-brand, .nav-link {
+  color: #333 !important; /* Darker text color for navbar links */
+}
 .sidebar {
-    height: 100vh;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #343a40;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+  width: 250px;
+  background-color: #cfd8ff; /* Light blue for sidebar */
+  padding: 15px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 56px; /* Align with navbar */
+  left: 0;
+  height: calc(100% - 56px); /* Full height minus navbar */
+  z-index: 999;
+}
+.sidebar .profile h5 {
+  color: #333; /* Darker text color for profile */
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Adjust for fixed sidebar width */
+}
+.sidebar .nav-item {
+  margin-bottom: 10px;
+}
+.sidebar .nav-link {
+  color: #333; /* Darker text color for sidebar links */
+}
+.sidebar .nav-link:hover {
+  background-color: #b3c7f9; /* Hover effect for sidebar links */
+}
+@media (max-width: 768px) {
+  .sidebar {
+      transform: translateX(-100%);
+      position: fixed;
+      z-index: 1000;
   }
-  .profile {
-    text-align: center;
-    margin-bottom: 20px;
+  .sidebar.active {
+      transform: translateX(0);
   }
-  .profile img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+  .content {
+      margin-left: 0;
   }
-  .profile h3 {
-    margin: 10px 0 0;
-    font-size: 18px;
+}
+@media (min-width: 768px) {
+  #sidebarToggle {
+      display: none;
   }
-  .sidebar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-  }
-  .sidebar a:hover {
-    background-color: #495057;
-  }
-  .contact-info {
-    margin-top: 20px;
-    font-size: 14px;
-  }
+}
